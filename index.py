@@ -34,8 +34,7 @@ def get_img_as_base64(file):
 # Convert the image "13.jpg" to base64 encoding
 img = get_img_as_base64("Logo3.png")
 
-# # Convert the local image "HERO.jpg" to base64 encoding
-# Background_img = get_img_as_base64("HERO.jpg")  # Replace with your local image path
+
 
 
 
@@ -43,24 +42,24 @@ genai.configure(api_key="AIzaSyBX9BFeAk8HcMmWSuhh0xR_4CnrtEGrHok")
 
 
 
-def to_markdown(text):
-  text = text.replace('•', '  *')
-  return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
+# def to_markdown(text):
+#   text = text.replace('•', '  *')
+#   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
 
-def to_markdown2(list1):
-  list2=list()
-  for i in list1:
-    if "*" in i:
-      newword=i.replace("*"," ")
-      list2.append(newword)
-    elif "-" in i:
-        newword=i.replace("-"," ")
-        list2.append(newword)
+# def to_markdown2(list1):
+#   list2=list()
+#   for i in list1:
+#     if "*" in i:
+#       newword=i.replace("*"," ")
+#       list2.append(newword)
+#     elif "-" in i:
+#         newword=i.replace("-"," ")
+#         list2.append(newword)
 
 
 
-  return list2
+#   return list2
 
 
 model = genai.GenerativeModel('gemini-pro')
