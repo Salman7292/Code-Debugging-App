@@ -20,8 +20,6 @@ st.set_page_config(
         page_icon="https://www.svgrepo.com/show/390209/bug-insect-code-development.svg",
         page_title="Code Debugger | app",
         layout="wide"
-
-        
         
             )
 
@@ -33,25 +31,6 @@ st.set_page_config(
 genai.configure(api_key="AIzaSyBX9BFeAk8HcMmWSuhh0xR_4CnrtEGrHok")
 
 
-
-# def to_markdown(text):
-#   text = text.replace('•', '  *')
-#   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
-
-
-# def to_markdown2(list1):
-#   list2=list()
-#   for i in list1:
-#     if "*" in i:
-#       newword=i.replace("*"," ")
-#       list2.append(newword)
-#     elif "-" in i:
-#         newword=i.replace("-"," ")
-#         list2.append(newword)
-
-
-
-#   return list2
 
 
 model = genai.GenerativeModel('gemini-pro')
@@ -96,9 +75,6 @@ def generate_code_assistance(code_snippet):
 
      
      
-
-
-
 # CSS styling for the Streamlit app
 page_bg_img = f"""
 <style>
@@ -196,7 +172,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Sidebar configuration
 with st.sidebar:
     # Display logo image
-    st.image("logo3.png", use_column_width=True)
+    # st.image("logo3.png", use_column_width=True)
 
     # Adding a custom style with HTML and CSS for sidebar
     st.markdown("""
