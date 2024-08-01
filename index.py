@@ -25,14 +25,6 @@ st.set_page_config(
         
             )
 
-# Function to convert an image file to base64 encoding
-def get_img_as_base64(file):
-    with open(file, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-# Convert the image "13.jpg" to base64 encoding
-img = get_img_as_base64("https://github.com/Salman7292/Code-Debugging-App/blob/0bae2685c788c1df3a8984d7928261ec64c8a06d/Logo3.png")
 
 
 
