@@ -343,7 +343,7 @@ elif selections=="Debug Your Code":
         label="Insert your Code",
         value="",
         height=200,
-        max_chars=2000,
+        max_chars=10000,
         placeholder="Type your Code here.",
         key="feedback"
     )
