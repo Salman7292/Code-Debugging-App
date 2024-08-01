@@ -32,7 +32,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 # Convert the image "13.jpg" to base64 encoding
-img = get_img_as_base64("https://raw.githubusercontent.com/Salman7292/Code-Debugging-App/main/Logo3.png")
+img = get_img_as_base64("https://github.com/Salman7292/Code-Debugging-App/blob/0bae2685c788c1df3a8984d7928261ec64c8a06d/Logo3.png")
 
 
 
