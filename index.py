@@ -28,7 +28,7 @@ st.set_page_config(
 
 
 
-genai.configure(api_key="AIzaSyBX9BFeAk8HcMmWSuhh0xR_4CnrtEGrHok")
+genai.configure(api_key="AIzaSyAkgJ60JabYJzxHTDqA_VwD6M_ptR0s5XU")
 
 
 
